@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge</title>
+        <link rel="stylesheet" href="style.css">
+        <script rel="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="container"><!--(1)class container porque aqui ira todo-->
+            <div class="logo">
+                <img class="logoImg" src="imagenes/logo.png"><!--esta clase se creo para colocar la mismo nivel logo y titulo de abajo-->
+                <h1 class="tittle">Encriptador de Mensajes</h1><!--esta clase se creo para colocar la mismo nivel logo y titulo de abajo-->
+
+            </div>
+            <div class="left"><!--(2)donde se ingresara el texto en este momendo left y right quedan uno arriba de otro por su disply block pero se modificara en el css-->
+                <input class="text-input" type="text" placeholder="Ingrese el texto aqui" id="inputTexto"><!--este id se creo para relacionarlo en la hoja .js para q la funcion leyera el input-->
+
+            </div>
+            <div class="right"><!--(3)donde se mostrara la respues-->
+                <img src="imagenes/Muñeco.png" id="imgDer">
+                <h1 id="texto">Ningun mensaje fue encontrado</h1>
+                <textarea id="texto2" name="name" rows="8" cols="80">Ingrese el texto que desea encriptar/desencriptar</textarea>
+                <button id="copiar" type="button" onclick="copiar()">¡Copiar!</button><!--este id se agrego al final para la hoja .js--><!--el onclick="copiar()" se agrego mas al final todavia para setear el boton-->
+
+
+            </div>
+            <div class="left-button"><!--donde van a estar lo botones-->
+                <p>Solo minusculas y sin acento</p>
+                <button id="btn-encriptar"type="button"onclick="encriptar()">Encriptar</button>
+                <button type="button" id="btn-desencriptar" onclick="desencriptar()"> Desencriptar </button><!--la funcion onclick="encriptar()" fue colocada al final para que al momento de presionar los botones llame a la funcion correspondiente-->
+            
+            </div>
+
+
+        </div>
+    </body>
+</html>

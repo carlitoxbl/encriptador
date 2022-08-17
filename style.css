@@ -1,0 +1,111 @@
+/*interesante como el compañero le coloca a los div color para saber como va quedando y ya despues se les colocara su color final*/
+
+body{/*(1)le coloca el margen y padin 0 y color verde para ir checando que no se le salga del marco*/
+    margin: 0px;
+    padding: 0px;
+    background: #F3F5FC;
+}
+.container{
+    margin: auto;/*(2)para que este centrado*//*al final pienso que por ese margen padre todo lo que iba modificando se iba centrando*/
+    width: 960px;/*esto lo indican en figma*/
+    height: 650px;
+    padding:5px;/*(3)para que se separe un poquito del body*/
+}
+.logo{
+    width: 100%;/*porque usa porcentaje...para que se adapte en porcentaje a las diferentes pantallas por eso se una % y px*/
+    float: left;/*para que se apoye en el lado izquierdo*/
+}
+.left{
+    float: left;/*para poder moverlo a donde sea*/
+    width: 70%;/*porque al 70 xq quedemos que esten en lado derecho e izquiero en la misma linea si no no van a caber*/
+    height: 70%;/*para que se ajuste solo*//*despues al final se da cuanta que el area amarilla se ve muy chica y cambia la propieda al 70% y hace que el area amarilla se alarge y baje el area rosa de los botones al final del contenedor*/
+    border-radius: 24px;/*para bordes redondeados*/
+    margin: 0 auto;
+    
+}
+.right{
+    float: right;
+    width: 30%;/*sumado al 70 de arriba 100% de la pantalla*/
+    height: auto;
+    border-radius: 24px;
+    background: white;
+    
+}
+.left-button{
+    float: left;
+    width:70%;
+    height: auto;
+    border-radius: 24px;
+    
+}
+.logoImg{
+    margin-top:1%;/*para crear un poco de separacion*/
+    margin-left: 5%;/*para crear un poco de separacion*/
+    float: inherit;/**/
+}
+.tittle{
+    float: inherit;/**/
+    margin-left: 20%;/**/
+}
+.text-input{
+    float:left;/*para dejarlo del lado izquierdo*/
+    margin-left: 10%;/*para alejarlo del lado amarillo*/
+    margin-top: 10%;/*para alejarlo un poco del top amarillo*/
+    width: 80%;/*para que ocupe el 80% de su contenedor*/
+    height: 80%;/*para que ocupe el 80% de su contenedor*/
+    color: #0A3871;/*dado por figma*/
+    font-size: 20px;
+    border: none;/*par quitar el recuadro*/
+    outline: none;/*para que cuando se haga clic en el cuadro tampoco aparezca borde */
+    background: #F3F5FC;/*fondo de la caja de texto*/
+}
+#imgDer{/*este id corresponde a la imagen noo al div o zona naranja para entonces*/
+    margin-top:20%;/*para que la imagen bagara un poco*/
+    width: 90%;/*para que la imagen ocupara 90% de la zona naranja o div*/
+    margin-left: 2%;/*para que terminara de entrar toda la imagen*/
+    height: auto;/*para que el largo se ajustara automatico*/
+}
+#texto{
+    margin-left:7%;
+    margin-right: 5%;
+}
+#texto2{
+    float: left;
+    margin-left:10%;
+    color: #0A3871;
+    width: 80%;
+    height: 60%;
+    border:none;
+    outline: none;
+    font-size:15px;
+
+}
+#btn-encriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 15%;
+    background: #0A3871;
+
+}
+
+#btn-desencriptar{
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 10%;/*separacion con el otro boton*/
+    background: #D8DFE8;
+}
+#copiar{
+    margin-left:33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;/*anchura del boton*/
+    height: 10%;/*altura del boton*/
+    background: #D8DFE8;
+    border-radius: 24px;
+    display: none;/*para que mientas no hay nada no aparezca el boton*/ 
+    
+}
